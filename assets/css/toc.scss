@@ -13,11 +13,14 @@
   li {
     margin-bottom: 0rem;
     color: var(--text-secondary-alt);
+    font-size: var(--desktop-caption);
+    line-height: var(--lh-desktop-caption);
   }
 
   a {
     text-decoration: none;
     color: var(--text-secondary-alt);
+    cursor: pointer;
 
     &:hover {
       color: var(--text-primary);

@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const h3Items = tocContainer.querySelectorAll('.h3 > ol');
   h3Items.forEach(sublist => {
     const parentLi = sublist.parentElement;
-    parentLi.classList.add('collapsible');
+    parentLi.classList.add('collapsible', 'expanded');
     parentLi.addEventListener('click', (e) => {
       if (e.target.tagName !== 'A') {
         parentLi.classList.toggle('expanded');
