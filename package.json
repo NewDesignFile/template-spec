@@ -1,0 +1,55 @@
+{
+  "name": "rhyver",
+  "version": "2.08.1",
+  "rhyver": "v2.25Q1.08.1",
+  "description": "RhyVer combines version tracking with calendar dates (year, quarter, week) to help teams maintain regular release schedules and align software updates with business planning cycles.",
+  "type": "module",
+  "moduleResolution": "node",
+  "main": "cli/rhyver.js",
+  "bin": {
+    "rhyver": "./dist/ryhver.js"
+  },
+  "scripts": {
+    "build:cli": "tsup rhyver.ts --format esm --target es2022 --outDir cli",
+    "dev:cli": "tsx rhyver.ts",
+    "start:cli": "node cli/rhyver.js",
+    "build": "vite build",
+    "dev": "vite",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/planetabhi/rhyver.git"
+  },
+  "homepage": "https://rhyver.com/",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "keywords": [
+    "versioning",
+    "system",
+    "rhythm",
+    "rhyver"
+  ],
+  "author": "@planetabhi",
+  "license": "MIT",
+  "files": [
+    "rhyver.md",
+    "cli/"
+  ],
+  "devDependencies": {
+    "@new-ui/colors": "^1.3.0",
+    "@new-ui/reset": "^0.0.5",
+    "@new-ui/spacings": "^0.1.3",
+    "@new-ui/typography": "^0.1.6",
+    "@types/node": "^22.13.4",
+    "commander": "^13.1.0",
+    "date-fns": "^4.1.0",
+    "sass-embedded": "^1.85.0",
+    "ts-node": "^10.9.2",
+    "tsup": "^8.3.6",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3",
+    "vite": "^6.1.0"
+  }
+}
