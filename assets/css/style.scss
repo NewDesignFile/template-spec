@@ -5,6 +5,14 @@
 @use "toc";
 
 @font-face {
+    font-family: 'copy';
+    font-style: normal;
+    font-weight: 100 900;
+    font-display: swap;
+    src: url("/assets/fonts/InterVariable.woff2") format("woff2");
+}
+
+@font-face {
     font-family: 'mono';
     src: url('/assets/fonts/mono.woff2') format('woff2');
     font-weight: 500;
@@ -13,9 +21,9 @@
 
 :root {
     font-size: 16px;
-    --sans: var(--system-ui);
-    --code: var(--monospace-code);
-    --rhyver: oklch(88.22% .1114 188.96);
+    --sans: "copy", var(--system-ui);
+    --code: "mono", var(--monospace-code);
+    --rhyver: oklch(0.751 0.1574 60.15);
     scroll-behavior: smooth;
     scroll-padding-top: 2rem;
 }
@@ -51,7 +59,6 @@ body {
     line-height: var(--lh-desktop-body-xl);
     font-style: normal;
     min-height: 100vh;
-    cursor: var(--f-cursor-default);
     @include mobile-typography;
 }
 
@@ -90,7 +97,6 @@ header {
         flex: 1;
         justify-content: flex-start;
         margin: 0;
-        cursor: var(--f-cursor-pointer);
     }
 }
 
@@ -411,15 +417,11 @@ dl {
 
 figure {
     margin-top: var(--spacing-08);
-    margin-left: calc(var(--spacing-04) * -1);
-}
-
-p, h1, h2, h3, h4, h5, h6, li, pre, code, strong, dl, dt {
-    cursor: var(--f-cursor-text);
+    margin-left: calc(var(--spacing-06) * -1);
 }
 
 a, a * {
-    cursor: var(--f-cursor-pointer);
+    cursor: pointer;
 }
 
 @media (max-width: 50rem) {
