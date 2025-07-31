@@ -5,11 +5,11 @@
 @use "toc";
 
 @font-face {
-    font-family: 'copy';
+    font-family: 'sans';
     font-style: normal;
     font-weight: 100 900;
     font-display: swap;
-    src: url("/assets/fonts/InterVariable.woff2") format("woff2");
+    src: url("/assets/fonts/sans.woff2") format("woff2");
 }
 
 @font-face {
@@ -21,7 +21,7 @@
 
 :root {
     font-size: 16px;
-    --sans: "copy", var(--system-ui);
+    --sans: "sans", var(--system-ui);
     --code: "mono", var(--monospace-code);
     --rhyver: oklch(0.751 0.1574 60.15);
     scroll-behavior: smooth;
