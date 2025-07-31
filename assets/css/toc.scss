@@ -1,11 +1,8 @@
 #toc {
   position: fixed;
-  top: 100px;
-  right: 20px;
-  width: 250px;
-  padding: 1rem;
-  border-radius: 0.5rem;
-  font-size: 0.9rem;
+  top: 1.5rem;
+  left: 1.5rem;
+  width: 16rem;
 
   ol {
     list-style: none;
@@ -14,20 +11,20 @@
   }
 
   li {
-    margin-bottom: 0.5rem;
+    margin-bottom: 0rem;
+    color: var(--text-secondary-alt);
   }
 
   a {
     text-decoration: none;
-    color: var(--text-primary);
+    color: var(--text-secondary-alt);
 
     &:hover {
-      color: var(--link-hover);
+      color: var(--text-primary);
     }
 
     &.active {
-      font-weight: bold;
-      color: var(--link-hover);
+      color: var(--text-primary);
     }
   }
 
