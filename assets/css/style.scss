@@ -5,30 +5,6 @@
 @use "toc";
 
 @font-face {
-    font-family: 'copy';
-    src: url('/assets/fonts/regular.woff2') format('woff2'),
-         url('/assets/fonts/regular.otf') format('otf');
-    font-weight: 400;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'copy';
-    src: url('/assets/fonts/medium.woff2') format('woff2'),
-         url('/assets/fonts/medium.otf') format('otf');
-    font-weight: 500;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'copy';
-    src: url('/assets/fonts/bold.woff2') format('woff2'),
-         url('/assets/fonts/bold.otf') format('otf');
-    font-weight: 700;
-    font-style: normal;
-}
-
-@font-face {
     font-family: 'mono';
     src: url('/assets/fonts/mono.woff2') format('woff2');
     font-weight: 500;
@@ -37,9 +13,9 @@
 
 :root {
     font-size: 16px;
-    --sans: "copy", var(--system-ui);
-    --code: "mono", var(--monospace-code);
-    --rhyver: oklch(63.5% 0.1004 76.62);
+    --sans: var(--system-ui);
+    --code: var(--monospace-code);
+    --rhyver: oklch(88.22% .1114 188.96);
     scroll-behavior: smooth;
     scroll-padding-top: 2rem;
 }
