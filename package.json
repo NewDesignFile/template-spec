@@ -5,10 +5,7 @@
   "description": "RhyVer combines version tracking with calendar dates (year, quarter, week) to help teams maintain regular release schedules and align software updates with business planning cycles.",
   "type": "module",
   "moduleResolution": "node",
-  "main": "cli/rhyver.js",
-  "bin": {
-    "rhyver": "./dist/ryhver.js"
-  },
+  "main": "index.js",
   "scripts": {
     "build": "vite build",
     "dev": "vite",
@@ -16,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/planetabhi/rhyver.git"
+    "url": "git+https://github.com/NewDesignFile/template-spec"
   },
   "homepage": "https://rhyver.com/",
   "engines": {
